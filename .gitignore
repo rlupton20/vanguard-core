@@ -1,0 +1,37 @@
+# Text editor artifacts
+*#
+*~
+
+# ghc Haskell objects
+*.o
+*.hi
+
+# Compiled file
+/src/Main
+
+# Profiling files
+*.prof
+
+# .mix and .tix files for test coverage using hpc
+*.mix
+*.tix
+
+# Cabal sandboxes
+/.cabal-sandbox/*
+cabal.sandbox.config
+
+# Cabal build
+/dist/*
+
+# Stack files
+.stack-work
+
+# TAGS and other emacs things
+TAGS
+.tramp_history
+
+# Test certificates
+/app/test
+
+# nix output
+result
