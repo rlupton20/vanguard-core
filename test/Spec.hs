@@ -1,4 +1,13 @@
-import Protolude
+import Test.Framework
+
+import TypesTest (typesTest)
+import ControlTest (controlTest)
+
+import Prelude
 
 main :: IO ()
-main = putStrLn ("Test suite not yet implemented" :: Text)
+main = defaultMain tests
+
+tests :: [Test]
+tests = [ typesTest
+        , controlTest ]
